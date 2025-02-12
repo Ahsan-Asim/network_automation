@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Deploy Configurations') {
             steps {
-                bat 'ansible-playbook -i ansible/inventory.ini ansible/playbook.yml'
+                bat 'wsl ansible-playbook -i ansible/inventory.ini ansible/playbook.yml'
             }
         }
     }
