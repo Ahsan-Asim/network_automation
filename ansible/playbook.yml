@@ -1,0 +1,7 @@
+- name: Configure Cisco Routers
+  hosts: routers
+  gather_facts: no
+  tasks:
+    - name: Apply Configuration from Files
+      ios_config:
+        src: "/mnt/f/8th_Semester/Network_CICD/Github_Repo_CICD/network_automation1/configs/{{ inventory_hostname }}.cfg"
