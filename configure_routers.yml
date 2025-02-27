@@ -1,0 +1,8 @@
+- hosts: all
+  gather_facts: no
+  tasks:
+    - name: Deploy Router Configurations
+      ios_config:
+        src: "{{ inventory_hostname }}_config.txt"
+
+
