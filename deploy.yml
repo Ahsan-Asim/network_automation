@@ -1,6 +1,6 @@
 - name: Configure Routers
   hosts: routers
-  gather_facts: no
+  gather_facts: noo
   tasks:
     - name: Set hostname
       ios_config:
@@ -10,9 +10,10 @@
     - name: Enable SSH
       ios_config:
         lines:
-          - ip domain-name ansible.lab
+          - ip domain name ansible.lab
           - crypto key generate rsa modulus 2048
           - username admin privilege 15 secret admin@123
           - line vty 0 4
           - transport input ssh
           - login local
+nmd,q mnwd wmndfmmn fejwmn
