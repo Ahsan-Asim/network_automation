@@ -1,6 +1,6 @@
 - name: Configure Routers
   hosts: routers
-  gather_facts: no
+  gather_facts: noo
   tasks:
     - name: Set hostname
       ios_config:
