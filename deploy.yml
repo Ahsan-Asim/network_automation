@@ -1,6 +1,6 @@
-- name: Configure Routers
+  name: Configure Routers
   hosts: routers
-  gather_facts: noo
+  gather_facts: no
   tasks:
     - name: Set hostname
       ios_config:
@@ -16,4 +16,3 @@
           - line vty 0 4
           - transport input ssh
           - login local
-nmd,q mnwd wmndfmmn fejwmn
